@@ -27,6 +27,6 @@ exports.post = async (req, res) => {
         return
     }
     let token = createToken(userDB)
-    res.status(200).json({token: token})
+    res.status(200).json({token: token, user: userDB})
     return
 }
