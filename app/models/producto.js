@@ -43,6 +43,7 @@ module.exports = sequelize => {
   const options = {
     tableName: "producto",
     comment: "",
+    timestamps: false,
     indexes: []
   };
   const ProductoModel = sequelize.define("producto_model", attributes, options);
